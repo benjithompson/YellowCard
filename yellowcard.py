@@ -77,7 +77,7 @@ def tweet_results(dl):
         print("error posting to twitter", flush=True)
 
 def repeat_function_mins():
-    schedule.schedule_run(run_yellowcard, )
+    schedule.schedule_run(run_yellowcard, 10)
 
 if __name__ == '__main__':
     repeat_function_mins()
