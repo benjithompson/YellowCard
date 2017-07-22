@@ -72,12 +72,12 @@ def tweet_results(dl):
             print(MSG.format(ISP, dl, ISP_DL))
             print("=====End=====", flush=True)
         else:
-            TWT.update_status(DEBUG_MSG.format(ISP, dl, ISP_DL))
+            TWT.update_status(MSG.format(ISP, dl, ISP_DL))
     except:
         print("error posting to twitter", flush=True)
 
 def repeat_function_mins():
-    schedule.schedule_run(run_yellowcard, 5)
+    schedule.schedule_run(run_yellowcard, )
 
 if __name__ == '__main__':
     repeat_function_mins()
